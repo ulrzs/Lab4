@@ -1,4 +1,4 @@
-# Laboratory_X
+# Laboratory_4
 template repo for Labs
 
 Tasks:
