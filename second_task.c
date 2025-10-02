@@ -18,8 +18,25 @@ for any other character it returns the original character.
 
 
 #include <stdio.h>
-
+#include <ctype.h>
+int isvowel(char c){
+    char x=tolower(c);
+    if (x=='a'||x=='e'||x=='i'||x=='o'||x=='u')
+    {
+        return 1;
+    }
+    else{return 0;}
+    
+}
 int main(){
+    printf("string: ");
+    char c;
+    while (scanf("%c", &c) == 1) {
+        if (isvowel(c)==1)
+            printf("%ch%c", c, tolower(c));
+        else
+            printf("%c", c);
+    }
 
 return 0;
 }
